@@ -31,6 +31,11 @@ const data = {
 };
 
 var options = {
+  plugins: {
+    legend: {
+        display: false
+    }
+},
   scales: {
     y: {
       min: 0,
@@ -45,7 +50,7 @@ var options = {
 
 export default function ChartShaon() {
   return (
-    <div className="App" style={{ width: "600px" }}>
+    <div className="App" style={{ width: "100%" }}>
       <Line data={data} options={options} />
     </div>
   );

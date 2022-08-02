@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+html {
+  height: 100%;
+}
 
 .App-logo {
   height: 40vmin;
@@ -12,7 +15,21 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.line2 {
+  background: #dcdcdc;
+  padding: 5px 10px;
+  color: #7848f4;
+  font-weight: bold;
+  border-bottom: 3px solid #7848f4;
+}
 
+.lineh2 {
+  line-height: 2;
+}
+input {
+  border: 1px solid blue;
+  padding: 0 10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +52,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#svg circle {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #666;
+  stroke-width: 1em;
+}
+#svg #bar {
+  stroke: #ff9f1e;
+}
+#cont {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 2em auto;
+  box-shadow: 0 0 1em black;
+  border-radius: 100%;
+  position: relative;
+}
+#cont:after {
+  position: absolute;
+  display: block;
+  height: 160px;
+  width: 160px;
+  left: 50%;
+  top: 50%;
+  box-shadow: inset 0 0 1em black;
+  content: attr(data-pct) "%";
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 100%;
+  line-height: 160px;
+  font-size: 2em;
+  text-shadow: 0 0 0.5em black;
 }
