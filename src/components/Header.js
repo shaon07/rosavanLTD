@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   return (
     <ContainerFluid>
       <div className="container p-3">
@@ -25,11 +26,12 @@ const Header = () => {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={()=>setIsNavCollapsed(!isNavCollapsed)}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">

@@ -66,7 +66,7 @@ const SearchBar1 = styled.div`
 
     form {
       background: white;
-      padding: 10px 20px;
+      padding: 1.3% 3%;
       border-radius: 50px;
     }
   }

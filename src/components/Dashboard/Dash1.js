@@ -64,7 +64,7 @@ const Dash1 = () => {
       <div className="row pt-3">
         <div className="col-12 order-1 col-md-3 my-3 my-md-0 piechart">
           <div className="PieChart">
-            <div className="BestSelling">
+            <div className="BestSelling mx-auto">
               <div className="sellingTitile d-flex justify-content-between">
                 <div>
                   <h6 style={{ marginTop: "9px", fontWeight: "bold" }}>
@@ -91,7 +91,7 @@ const Dash1 = () => {
               </div>
 
               <div className="cahrtInfo">
-                <div className="row p-3">
+                <div className="row p-3 ">
                   <div className="col-4">
                     <div
                       className="color"
@@ -121,8 +121,8 @@ const Dash1 = () => {
             </div>
           </div>
 
-          <Sales className="col-12 my-3">
-            <div className="salesContent bg-white rounded">
+          <Sales className="col-12 my-3 mx-auto">
+            <div className="salesContent bg-white rounded ">
               <div className="d-flex justify-content-between p-3">
                 <div>
                   <h6 style={{ marginTop: "9px", fontWeight: "bold" }}>
@@ -153,10 +153,10 @@ const Dash1 = () => {
           </Sales>
         </div>
 
-        <Dashboard className="col-12 order-2 col-md-9 Dashboard">
-          <div className="row justify-content-around">
+        <Dashboard className="col-12 order-2 col-md-9 Dashboard ">
+          <div className="row justify-content-around ">
             <div className="col-12 col-md-4 my-3 my-md-0">
-              <div className="wrapper bg-white rounded">
+              <div className="wrapper bg-white rounded mx-auto">
                 <div class="select">
                   <select
                     class="form-select"
@@ -170,15 +170,15 @@ const Dash1 = () => {
                   </select>
                 </div>
 
-                <div className="Line">
-                  <Line1 />
+                <div className="Line mx-auto">
+                  <Line1 className="mx-auto"/>
                 </div>
               </div>
             </div>
 
             <div className="col-12  col-md-4  ">
               <div
-                className="wrapper bg-white my-3 my-md-0 rounded NewSales d-flex justify-content-around align-items-center"
+                className="wrapper bg-white my-3 my-md-0 rounded NewSales d-flex justify-content-around align-items-center mx-auto "
                 style={{ height: "100%", padding: "0 10px" }}
               >
                 <div className="SalesNumber text-center">
@@ -199,7 +199,7 @@ const Dash1 = () => {
             </div>
             <div className="col-12  col-md-4 ">
               <div
-                className="wrapper my-3 my-md-0 bg-white rounded NewSales d-flex justify-content-around align-items-center"
+                className="wrapper my-3 my-md-0 bg-white rounded NewSales d-flex justify-content-around align-items-center mx-auto"
                 style={{ height: "100%", padding: "0 10px" }}
               >
                 <div className="SalesNumber text-center">
@@ -222,8 +222,8 @@ const Dash1 = () => {
           <div className="row">
             <div className="col-12">
               <div className="col-12 my-3">
-                <div className="ana bg-white p-3">
-                  <div className="titles d-flex justify-content-between my-3">
+                <div className="ana mx-auto bg-white p-3">
+                  <div className="titles  d-flex justify-content-between my-3">
                     <div className="SalesRevenue">
                       <h6>Sales Revenue</h6>
                     </div>
@@ -241,7 +241,7 @@ const Dash1 = () => {
           <div className="row">
             <div className="col-12">
               <div className="col-12 my-3">
-                <div className="ana bg-white p-3">
+                <div className="ana mx-auto bg-white p-3">
                   <div className="titles d-flex justify-content-between my-3">
                     <div className="SalesRevenue">
                       <h6>Recent Event</h6>
@@ -311,7 +311,7 @@ const DashContent = styled.div`
 
     .BestSelling {
       width: 100%;
-      max-width: 90%;
+      max-width: 90% !important;
 
       h6 {
         font-size: 90%;
@@ -345,7 +345,7 @@ const DashContent = styled.div`
     border-radius: 10px;
     padding: 1rem;
     width: 100%;
-    max-width: 90%;
+    max-width: 100%;
 
     h6 {
       font-size: 100%;
